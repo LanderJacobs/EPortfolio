@@ -3,33 +3,42 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/personalStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="css/personalStyle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="documents/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="documents/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="documents/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="documents/favicon_io/site.webmanifest">
+    <script src="https://kit.fontawesome.com/c15d9dd35a.js" crossorigin="anonymous"></script>
     <title>Lander Jacobs-Portfolio</title>
   </head>
+
   <body class="backgroundpage">
 
+    <!--navbar-->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html">Welkom</a>
+      <a class="navbar-brand text-white" onclick="personalScroll('intro')">Welkom</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse navbarlink-color" id="navbarSupportedContent">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="AboutMe.html">Over Mij</a>
-          <a class="nav-item nav-link" href="projects.html">Projecten</a>
+          <a class="nav-item nav-link text-white" onclick="personalScroll('aboutme')">Over Mij</a>
+          <a class="nav-item nav-link text-white" onclick="personalScroll('projects')">Projecten</a>
         </div>
       </div>
     </nav>
     
+    <!--welkom-->
+
     <div class="ownhero">
-      <div class="row">
-        <div class="col text-center text-white">
-          <h1 class="display-1 text-center font-weight-bold mt-5">Welkom</h1>
+      <div class="row pt-3" id="intro">
+        <div class="col text-center text-white trueaid h-100">
+          <h1 class="truewelcome text-center fw-bold mt-5">Welkom</h1>
         </div>
       </div>
-      <div class="row">
+      <div class="row pt-2">
         <div class="col text-center text-white">
           <h2>op mijn portfolio</h2>
         </div>
@@ -42,36 +51,541 @@
         </div>
         <div class="col-2"></div>
       </div>
-    </div>
 
-    <div class="container pt-3  pb-5">
-      <div class="row mt-5">
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Wie ben ik?</h5>
-              <p class="card-text mb-5">Als u wat meer over mij te weten wilt komen kunt u deze knop gebruiken.</p>
-              <a href="AboutMe.html" class="btn btn-primary btn-lg buttonbottom">
-                Over mij
-              </a>
-            </div>
+
+      <div class="container pt-3 pb-5">
+        <div class="row mt-5 pb-4">
+          <div class="col">
+            
+            <a class="clickcard" onclick="personalScroll('aboutme')">
+              <div class="card grow">
+                <div class="card-body">
+                  <h5 class="card-title">Wie ben ik?</h5>
+                  <p class="card-text">Als u wat meer over mij te weten wilt komen kunt u deze knop gebruiken.</p>
+                </div>
+              </div>
+            </a>
+
           </div>
+          <div class="col">
+
+            <a class="clickcard" onclick="personalScroll('projects')">
+              <div class="card grow">
+                <div class="card-body">
+                  <h5 class="card-title">Wat heb ik al gedaan?</h5>
+                  <p class="card-text">Dit zijn enkele projecten waar ik aan heb gewerkt.</p>
+                </div>
+              </div>
+            </a>
+
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Wat heb ik al gedaan?</h5>
-              <p class="card-text mb-5">Dit zijn enkele projecten waar ik aan heb gewerkt.</p>
-              <a href="projects.html" class="btn btn-primary btn-lg buttonbottom">
-                Projecten
-              </a>
-            </div>
-          </div>
       </div>
     </div>
 
+    <!--aboutme-->
+
+    <div class="secondhero">
+      <div class="row" id="aboutme">
+        <div class="col text-center text-white">
+          <h1 class="display-3 text-center fw-bold mt-5">Over mij</h1>
+        </div>
+      </div>
+      <div class="row text-center text-white mt-4 pb-3">
+        <div class="col-2"></div>
+        <div class="col text-center">
+          <p>Hier vertel ik wat over mezelf, ik geef ook weer waar mijn vaardigheden liggen en onderaan kunt u mijn CV terugvinden, moest u alle informatie nog eens willen downloaden.</p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    
+    <div class="container pt-5 pb-5">
+      
+      <div class="card card_special">
+        <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src="documents/images/profielfoto_LanderJacobs.jpg" class="img-responsive card_img_left" alt="profielfoto Lander Jacobs"/>
+        </div>
+        <div class="col-sm-8 col-md-12 col-lg-8">
+          <div class="card-body">
+            <h5 class="card-title">Wie ben ik?</h5>
+          <p class="card-text">
+                Ik ben Lander Jacobs momenteel student aan het Thomas More te Geel. Na het middelbaar was ik niet zeker wat ik wou doen en zo ben ik na
+  verschillende keuzes beland bij het graduaat programmeren aan het Thomas More. Ik leerde veel bij over programmeren en de verschillende
+  mogelijkheden naar de toekomst toe, dit lag mij wel. Zo wou ik na het behalen van mijn diploma voor dit graduaat graag verder gaan om mijn
+  kennis te verbreden en een hoger diploma te halen door te gaan voor een bachelor in de Toegepaste Informatica. </p>
+  <p class="card-text">
+  Als ik een eigenschap van mezelf zou moeten benoemen zou ik zeggen dat ik vrij creatief uit de hoek kan komen, ik vindt het interessant om
+  met creatieve oplossingen problemen uit de weg te slaan. Daarom heb ik ook gekozen voor applicatieprogrammeren als keuzerichting, dit is naar mijn
+  mening een van de meest interessante onderwerpen binnen de IT-wereld om problemen te kunnen oplossen.
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="card mt-5">
+            <div class="card-body">
+              <h4 class="card-title">Soft skills</h4>
+              <div class="row">
+                <div class="col">
+                  <p class="borderright">zelfstandig</p>
+                </div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-regular fa-star fa-2x"></i></div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="borderright">Teamwerk</p>
+                </div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <p class="borderright">Flexibel</p>
+                </div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-regular fa-star fa-2x"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <p class="borderright">Nauwkeurig</p>
+                </div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-regular fa-star fa-2x"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <p class="borderright">Betrouwbaar</p>
+                </div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <p class="borderright">Besluitvaardig</p>
+                </div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-regular fa-star fa-2x"></i></div>
+                <div class="col"><i class="fa-regular fa-star fa-2x"></i></div>
+              </div>
+
+            </div>
+            
+            <div class="card-body">
+              <h4 class="card-title">Competenties</h4>
+            <div class="row justify-content-md-center">
+              <div class="col text-center">
+                <i class="fa-brands fa-php fa-3x"></i>
+                <p class="card-text">PHP</p>
+              </div>
+              <div class="col text-center">
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <p class="card-text">HTML</p>
+              </div>
+              <div class="col text-center">
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <p class="card-text">CSS</p>
+              </div>
+              <div class="col text-center">
+                <i class="fa-brands fa-js fa-3x"></i>
+                <p class="card-text">Javascript</p>
+              </div>
+              <div class="col text-center">
+                <i class="fa-brands fa-java fa-3x"></i>
+                <p class="card-text">Java</p>
+              </div>
+              <div class="col text-center">
+                <img src="documents/images/Csharp_Logo.png" class="clogo"/>
+                <p class="card-text">C#</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="card rounded-50 mt-5">
+            <div class="card-body">
+              <h4 class="card-title">Interesse in mijn CV?</h4>
+            <p class="card-text">Als u interesse hebt kunt u hier mijn CV bekijken in een apart tabblad of downloaden als PDF.</p>
+            <a href="documents/LanderJacobs_CV_Online.pdf" target="_blank" class="btn btn-primary btn-lg">
+              Bekijk CV
+            </a>
+            <a href="documents/LanderJacobs_CV_Online.pdf" download="CV_JacobsLander" class="btn btn-primary btn-lg">
+              Download CV
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--projecten-->
+
+    <div class="secondhero" id="projects">
+      <div class="row">
+        <div class="col text-center text-white">
+          <h1 class="display-3 text-center fw-bold mt-5">Mijn projecten</h1>
+        </div>
+      </div>
+      <div class="row text-center text-white mt-4 pb-3">
+        <div class="col-2"></div>
+        <div class="col text-center">
+          <p>Dit zijn enkele projecten waar ik in het verleden aan heb gewerkt en waar mijn ervaring dus ook vandaan komt. Aan enkele persoonlijke projecten wens ik in de toekomst nog te werken met als doel om de projecten te verbeteren en mijn skills uit te breiden.</p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col pb-5">
+
+          <a class="clickcard" data-bs-toggle="modal" data-bs-target="#dungeonModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Klik voor meer info">
+            <div class="card w-100 h-100 rounded-top grow">
+              <img class="card-img-top img-thumbnail" src="documents/images/screenshot_Dungeon_Project.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Dungeon project</h5>
+                <p class="card-text hidelongtext">Een projectje waar ik aan heb gewerkt voor mijn lessen DevOps (Development & Operations). Het is een klein spelletje dat bedoelt is om te testen of het mogelijk is om een RPG-stijl spel te maken met behulp
+                  van gegevens uit een database. Ik ben van plan hier in de toekomst nog aan te werken om het visueel wat beter uit te
+                  werken en wat meer aandacht te schenken aan de werking van bepaalde functionaliteiten.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col pb-5">
+          <a class="clickcard pb-5" data-bs-toggle="modal" data-bs-target="#webModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Klik voor meer info">
+            <div class="card w-100 h-100 rounded-top grow">
+              <img class="card-img-top img-thumbnail" src="documents/images/net_logo.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Webapplicatie project</h5>
+                <p class="card-text hidelongtext">
+                  Een project voor het vak Webapplicaties binnen het graduaat programmeren. Het doel van de opdracht was om een Webapplicatie
+                  te maken in .net core met behulp van het MVC model om zo gegevens weer te geven vanuit een database die door de school werd
+                  onderhouden.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col-lg-6 col-md-12 pb-5">
+          <a class="clickcard" data-bs-toggle="modal" data-bs-target="#bergModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Klik voor meer info">
+            <div class="card w-100 h-100 rounded-top grow">
+              <img class="card-img-top img-thumbnail" src="documents/images/Platte_Berg.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Website Fietsclub de Platte Berg</h5>
+                <p class="card-text hidelongtext">
+                  Voor dit project heb ik met een team van medestudenten met behulp van het PHP-framework Laravel een website moeten opzetten voor fietsclub de Platte Berg.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modals-->
+
+    <div class="modal fade" id="dungeonModal" tabindex="-1" aria-labelledby="dungeonModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="dungeonModalLabel">Dungeon project</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-thumbnail" src="documents/images/screenshot_Dungeon_Project.png" alt="Card image cap">
+            <p class="card-text">Een projectje waar ik aan heb gewerkt voor mijn lessen DevOps (Development & Operations). Het is een klein spelletje dat bedoelt is om te testen of het mogelijk is om een RPG-stijl spel te maken met behulp
+              van gegevens uit een database. Ik ben van plan hier in de toekomst nog aan te werken om het visueel wat beter uit te
+              werken en wat meer aandacht te schenken aan de werking van bepaalde functionaliteiten.
+            </p>
+
+            <!--extra info dungeon-->
+
+            <div class="accordion accordion-flush" id="accordionFlushDungeon">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneD">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneD" aria-expanded="false" aria-controls="flush-collapseOneD">
+                    Programeertalen
+                  </button>
+                </h2>
+                <div id="flush-collapseOneD" class="accordion-collapse collapse" aria-labelledby="flush-headingOneD" data-bs-parent="#accordionFlushDungeon">
+                  <div class="accordion-body">
+                    <div class="row justify-content-md-center">
+                      <div class="col text-center">
+                        <i class="fa-solid fa-code fa-xl"></i>
+                        <p class="card-text">C#/.Net Core</p>
+                      </div>
+                      <div class="col text-center">
+                        <i class="fa-solid fa-laptop-code fa-xl"></i>
+                        <p class="card-text">XML</p>
+                      </div>
+                      <div class="col text-center">
+                        <i class="fa-solid fa-database fa-xl"></i>
+                        <p class="card-text">SQL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoD">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoD" aria-expanded="false" aria-controls="flush-collapseTwoD">
+                    Technieken
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoD" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoD" data-bs-parent="#accordionFlushDungeon">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>MVVM (Model-View-Viewmodel)</li>
+                      <li>Code-first database</li>
+                      <li>ORM (Object-relational mapping)</li>
+                      <li>Unit of work</li>
+                      <li>Generic repository</li>
+                      <li>SQLite</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeD">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeD" aria-expanded="false" aria-controls="flush-collapseThreeD">
+                    Wat heb ik geleerd?
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeD" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeD" data-bs-parent="#accordionFlushDungeon">
+                  <div class="accordion-body">
+                    <p class="card-text">
+                      Ik heb van dit project voornamelijk geleerd om zelfstandig een heel project op te zetten. Hiervoor moest ik rekening houden met hoe ik de data ging structureren om deze vervolgens te kunnen gebruiken. Dit was ook de tweede keer dat met code-first werkte en met ORM binnen C#. Deze keer heb ik dan ook een betere kijk gekregen op wat ik precies aan het doen was en heb ik mijn kennis over deze technieken kunnen uitbreiden.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <a href="https://github.com/LanderJacobs/dungeon_project" target="_blank" class="github_symbol">
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="webModal" tabindex="-1" aria-labelledby="webModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="webModalLabel">Project WebApplicatie</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-thumbnail" src="documents/images/net_logo.png" alt="Card image cap">
+            <p class="card-text">
+              Een project voor het vak Webapplicaties binnen het graduaat programmeren. Het doel van de opdracht was om een Webapplicatie
+              te maken in .net core met behulp van het MVC model om zo gegevens weer te geven vanuit een database die door de school werd
+              onderhouden.
+            </p>
+
+            <!--extra info project webapplicatie-->
+
+            <div class="accordion accordion-flush" id="accordionFlushWebapp">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneW">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneW" aria-expanded="false" aria-controls="flush-collapseOneW">
+                    Programeertalen
+                  </button>
+                </h2>
+                <div id="flush-collapseOneW" class="accordion-collapse collapse" aria-labelledby="flush-headingOneW" data-bs-parent="#accordionFlushWebapp">
+                  <div class="accordion-body">
+                    <div class="row justify-content-md-center">
+                      <div class="col text-center">
+                        <i class="fa-solid fa-code fa-xl"></i>
+                        <p class="card-text">C#/.Net Core</p>
+                      </div>
+                      <div class="col text-center">
+                        <i class="fa-brands fa-html5 fa-xl"></i>
+                        <p class="card-text">Html</p>
+                      </div>
+                      <div class="col text-center">
+                        <i class="fa-solid fa-database fa-xl"></i>
+                        <p class="card-text">SQL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoW">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoW" aria-expanded="false" aria-controls="flush-collapseTwoW">
+                    Technieken
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoW" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoW" data-bs-parent="#accordionFlushWebapp">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>MVC (Model-View-Controller)</li>
+                      <li>Dependency Injection</li>
+                      <li>Code-first database</li>
+                      <li>ORM (Object-relational mapping)</li>
+                      <li>Unit of work</li>
+                      <li>Generic repository</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeW">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeW" aria-expanded="false" aria-controls="flush-collapseThreeW">
+                    Wat heb ik geleerd?
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeW" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeW" data-bs-parent="#accordionFlushWebapp">
+                  <div class="accordion-body">
+                    <p class="card-text">
+                      Binnen dit project heb ik voor de eerste keer gebruik gemaakt van MVC. Dit was een heel leerproces voor mij omdat dit mijn eerste aanraking met MVC/MVVM was. Daarnaast was het de bedoeling dat we hiervoor repositories zouden maken voor elke individuele klasse die in de database zat, ik heb deze kans gegrepen om mij meteen op pad te zetten met generic repositories. Dit maakte de rest van het programmeren wel een stuk eenvoudiger.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/LanderJacobs/Project_Webapplicaties" target="_blank" class="github_symbol">
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="bergModal" tabindex="-1" aria-labelledby="bergModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="bergModalLabel">Website Fietsclub de Platte Berg</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-thumbnail" src="documents/images/Platte_Berg.png" alt="Card image cap">
+            <p class="card-text">
+              Voor dit project heb ik met een team van medestudenten met behulp van het PHP-framework Laravel een website moeten opzetten voor fietsclub de Platte Berg.
+            </p>
+
+            <!--extra info website fietsclub de Platte Berg-->
+
+            <div class="accordion accordion-flush" id="accordionFlushplatte">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneP">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneP" aria-expanded="false" aria-controls="flush-collapseOneP">
+                    Programeertalen
+                  </button>
+                </h2>
+                <div id="flush-collapseOneP" class="accordion-collapse collapse" aria-labelledby="flush-headingOneP" data-bs-parent="#accordionFlushplatte">
+                  <div class="accordion-body">
+                    <div class="row justify-content-md-center">
+                      <div class="col text-center">
+                        <i class="fa-brands fa-php fa-xl"></i>
+                        <p class="card-text">PHP/Laravel</p>
+                      </div>
+                      <div class="col text-center">
+                        <i class="fa-brands fa-html5 fa-xl"></i>
+                        <p class="card-text">Html</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoP">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoP" aria-expanded="false" aria-controls="flush-collapseTwoP">
+                    Technieken
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoP" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoP" data-bs-parent="#accordionFlushplatte">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>MVC (Model-View-Controller)</li>
+                      <li>Code-first database</li>
+                      <li>ORM (Object-relational mapping)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeP">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeP" aria-expanded="false" aria-controls="flush-collapseThreeP">
+                    Wat heb ik geleerd?
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeP" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeP" data-bs-parent="#accordionFlushplatte">
+                  <div class="accordion-body">
+                    <p class="card-text">
+                      Dit project was de eerste keer dat ik de vrije loop heb gekregen om me op PHP te kunnen storten, en dan meer bepaald op het framework Laravel. Daarnaast heb ik mijn soft skills in verband met groepswerk kunnen verbeteren
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/LanderJacobs/Project_Webapplicaties" target="_blank" class="github_symbol">
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+
+    <footer class="bg-dark text-center text-white footerextra">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 - Lander Jacobs
+        <a href="https://www.linkedin.com/in/lander-jacobs-076596241/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-xl align-symbols"></i>
+        </a>
+      </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/personalScript.js" type="text/javascript"></script>
   </body>
 </html>
